@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="card">
+            <img src="/upload image/images/profile-icon-9.png" id="profilepic">
+            <label for="input-file">UPDATE IMAGE</label>
+            <input type="file" accept="image/jpeg,image/png,image/jpg " id="input-file">
+        </div>
+    </div>
+
+    <script>
+        let profilepic=document.getElementById("profilepic");
+        let inputfile=document.getElementById("input-file");
+
+        inputfile.onchange=function(){
+            profilepic.src=URL.createObjectURL(inputfile.files[0]);
+        }
+    </script>
+
+    <input type="color" id="colo">
+<script>
+     let x=document.getElementById("colo");
+     console.log(x.value);
+</script>
+</body>
+</html>

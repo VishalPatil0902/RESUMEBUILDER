@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive FAQ Accordion | CodingLab </title>
+    <link rel="stylesheet" href="faq.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+   </head>
+<body>
+
+      <!-------------------------------------nav-------------------------->
+
+      <nav class = "navbar bg-white">
+        <div class="container1">
+            <div class = "navbar-content">
+                <div class = "brand-and-toggler">
+                    <a href = "/HOME/index.html" class = "navbar-brand">
+                        <img src = "/HOME/assets/images/curriculum-vitae.png" alt = "" class = "navbar-brand-icon">
+                        <span class = "navbar-brand-text">build <span>resume.</span>
+                    </a>
+                    <div class="nav-items">
+                        <a href="/ABOUT US/aboutus.html">ABOUT US</a>
+                        <a href="/CONTACTUS/Contactus/index.html">CONTACT US</a>
+                        <a href="/FAQ/faq.html">FAQ</a>
+                        <a href="/ARTICLES/articles.html">ARTICLES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+  <div class="accordion">
+    <div class="image-box">
+      <img src="faq-page-banner.png" alt="">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FREQUENTLY ASKED QUESTIONS</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">What do you mean by HTML & CSS?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, doloribus.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What do you mean by JavaScript?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">From where you learned HTML & CSS?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, necessitatibus.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Which code editor do you use?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, labore.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Software you use for video editing?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repudiandae!</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+  <footer class = "footer bg-dark">
+    <div class="container1">
+        <div class = "footer-content text-center">
+            <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>build.resume</span></p>
+        </div>
+    </div>
+</footer>
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>

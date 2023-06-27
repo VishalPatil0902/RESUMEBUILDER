@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PAGE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common.min.css" />
+    <title>PAGE</title>
+</head>
+<body>
+
+
+ 
+<!-- -------------PDF GENERATEOR --------------- -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common.min.css" />
+<script src="https://kendo.cdn.telerik.com/2017.1.223/js/jszip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
+     
+     
+    <div id="example">
+    <div class="box wide hidden-on-narrow">
+    </div>
+    <input type="file" accept="image/jpeg,image/png,image/jpg " id="input-file" style="color:transparent" value="ADD PHOTU">
+
+    <div class="page-container hidden-on-narrow">
+        <div class="pdf-page size-a4">
+            
+            <page size="A4" style="margin: 0;">
+               
+               <!-- PDF CONTENT START -->
+               <div class="super-main">
+
+                        <!-- Toggle Buttons -->
+                       
+                      <div>
+                        <div class="toggle">
+                            <div class="IMAGE">
+                                <h2>IMAGE</h2>
+                                <div class="tog-container">
+                                    <input type="file" accept="image/jpeg,image/png,image/jpg " id="input-file">
+                                    <input type="checkbox" class="tglbtn" id="minus-one" checked onclick="isChecked()">
+                                    <label for="minus-one"></label>
+                                </div>
+                            </div>
+                            <div class="ABOUT-ME">
+                                <h2>ABOUT ME</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="zero" checked onclick="isChecked()">
+                                    <label for="zero"></label>
+                                </div>
+                            </div>
+                            <div class="TECHNICAL-SKILLS">
+                                <h2>TECHNICAL SKILLS</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="one" checked onclick="isChecked()">
+                                    <label for="one"></label>
+                                </div>
+                            </div>
+                            <div class="SOFT-SKILLS">
+                                <h2>SOFT SKILLS</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="two" checked onclick="isChecked()">
+                                    <label for="two"></label>
+                                </div>
+                            </div>
+                            <div class="HOBBIES">
+                                <h2>HOBBIES</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="three" checked onclick="isChecked()">
+                                    <label for="three"></label>
+                                </div>
+                            </div>
+                            <div class="LANGUAGES">
+                                <h2>LANGUAGES</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="four" checked onclick="isChecked()">
+                                    <label for="four"></label>
+                                </div>
+                            </div>
+                            <div class="CERTIFICATIONS">
+                                <h2>CERTIFICATIONS</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="five" checked onclick="isChecked()">
+                                    <label for="five"></label>
+                                    </div>
+                            </div>
+                            <div class="WORK-EXPERIENCE">
+                                <h2>WORK EXPERIENCE</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="six" checked onclick="isChecked()">
+                                    <label for="six"></label>
+                                    </div>
+                            </div>
+                            <div class="PROJECTS">
+                                <h2>PROJECTS</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="seven" checked onclick="isChecked()">
+                                    <label for="seven"></label>
+                                    </div>
+                            </div>
+                            <div class="EDUCATION">
+                                <h2>EDUCATION</h2>
+                                <div class="tog-container">
+                                    <input type="checkbox" class="tglbtn" id="eight" checked onclick="isChecked()">
+                                    <label for="eight"></label>
+                                </div>
+                            </div>
+
+
+                            
+                        </div>
+
+                        <div class="darsha">
+                            <input type="file" accept="image/jpeg,image/png,image/jpg " id="input-file" style="margin-top: -1031px;margin-left: -25px;position: absolute;color: transparent;">
+                        </div>
+                    </div>
+        
+                <div class="main_container">  
+                    <div id="container" class="container">
+                        <div id="header-1">
+                            <div id="photo" class="tgl">
+                                 <img src="/upload image/images/profile-icon-9.png" id="profilepic" style="border-radius: 50%;">
+                            </div>
+                         
+                            <div id="name-links">
+                                 <div id="name">
+                                   <h1 contenteditable="true" placeholder="Your Name">YOUR NAME</h1>
+                                    <p contenteditable="true" placeholder="Your Role Or Profession">YOUR ROLE OR PROFESSION</p>
+                            </div>
+                 
+                                 <div id="links">
+                                     <div class="row 4">
+                                         <a href="" contenteditable="true" placeholder="xyz@gmail.com">xyz@gmail.com</a>
+                                         <a href="" contenteditable="true" placeholder="phonenumber ">9324098270</a>
+                                     </div>
+                 
+                                     <div class="row 2">
+                                         <a href="" id="linkedinhere">Linkedin</a>
+                                         <a href="" id="githubhere">GITHUB</a>
+                                     </div>
+                 
+                                     <!-- <div class="row 3">
+                                         
+                                         <a href="www.google.com">GITHUB</a>
+                                     </div> -->
+                 
+                                 </div>
+                 
+                             </div> 
+                 
+                         </div>
+                 
+                         <div id="main">
+                             <div id="left">
+                                 <div class="aboutme tgl">
+                                       <p class="title" contenteditable="true">ABOUT ME</p>
+                                        
+                                       <br>
+                                       <p class="content" contenteditable="true" placeholder="Enter your professional summary. Provide a brief overview of your relevant skills, experience, and qualities that would make you a good candidate for the job. Make sure to keep it concise and focused. If you need help writing your professional summary, you can use the AI Writing Assistant."></p>
+                                 </div>
+                 
+                                 <div class="skill tgl" id="TECHNICAL_SKILLS">
+                                    
+                                     <!-- <i class="fa-solid fa-circle-plus" style="position: absolute;margin: px 0px 0px 0px;color: green;"></i>
+                                     <i class="fa-solid fa-circle-minus" style="position: absolute;margin: 0px 0px 0px 0px;color: rgb(128, 19, 0);"></i> -->
+        
+                                     <p class="title" contenteditable="true" placeholder="TECHNICAL SKILLS">TECHNICAL SKILLS</p>
+                                      
+                                     <br>
+                                     <div class="wrap" id="wrap">
+                                         <p class="block" contenteditable="true" id="main-skill">Enter Skill</p>
+                                     </div>   
+                                 </div>
+            
+                                 <div class="skill tgl" id="SOFT_SKILLS">
+                                     
+                                    <p class="title" contenteditable="true" placeholder="SOFT SKILLS">SOFT SKILLS</p>
+                                     
+                                    <br>
+                                    <div class="wrap" id="wrap">
+                                        <p class="block" contenteditable="true"id="main-skill">Enter Skill</p>
+                                    </div>   
+                                </div>
+            
+                                <div class="skill tgl" id="HOBBIES">
+                                    <p class="title" contenteditable="true" placeholder="HOBBIES">HOBBIES</p>
+                                     
+                                    <br>
+                                    <div class="wrap" id="wrap">
+                                        <p class="block" contenteditable="true" id="main-skill">Enter Skill</p>
+                                       
+                                    </div>   
+                                </div>
+            
+                                <div class="skill tgl" id="LANGUAGES">
+                                    <p class="title" contenteditable="true" placeholder="LANGUAGES">LANGUAGES</p>
+                                     
+                                    <br>
+                                    <div class="wrap" id="wrap">
+                                        <p class="block" contenteditable="true" id="main-skill">Enter Skill</p>
+                                        
+                                    </div>   
+                                </div>
+            
+                                <div class="skill tgl" id="CERTIFICATIONS">
+                                    <p class="title" contenteditable="true" placeholder="CERTIFICATIONS">CERTIFICATIONS</p>
+                                     
+                                    <br>
+                                    <div class="wrap" id="wrap">
+                                        <p class="block" contenteditable="true" id="main-skill">Enter Skill</p>
+                                        
+                                    </div>   
+                                </div>
+                 
+                             </div>
+                 
+                                <div id="right">
+                                  <!-- work experice area -->
+                                    <div id="work-experience" class="tgl">
+                                     <p class="title" contenteditable="true" placeholder="WORK EXPERIENCE">WORK EXPERIENCE</p>
+                                      
+                                      <!-- work experience block -->
+                                
+                                        <ul>
+                                            <li>
+                                                <div class="experience-block">
+                                                 <p class="title" contenteditable="true" placeholder="Position"></p>
+                                                 <p class="right" contenteditable="true" placeholder="From-Until"></p>
+                                                   <div class="experience">
+                                                    <p class="" contenteditable="true" placeholder="EMPLOYER"></p>
+                                                   </div>
+                                                   <p class="content exp" contenteditable="true" placeholder="Enter your work experience description. Provide details that showcase how you were able to contribute and add value. Focus on responsibilities that are relevant to the job you are applying for. If you need help writing your work experience description, you can use the AI Writing Assistant">INFO</p>
+                                                </div> 
+                                            </li>
+            
+                                            
+                                        </ul>
+            
+            
+                                        <!-- /work experience block -->
+                                    </div>
+                                     <!-- /work experice area -->
+                 
+                                 <!-- PROJECTS AREA -->
+                                    <div id="project" class="tgl">
+                                         <p class="title" contenteditable="true" placeholder="PROJECTS">PROJECTS</p>
+                                          
+                                         <!-- PROJECT BLOCK -->
+                                         <ul>
+                                            <li>
+                                                <div class="experience-block">
+                                                    <p class="title" contenteditable="true" placeholder="PROJECT NAME"></p>
+                                                    <p class="right" contenteditable="true" placeholder="From-Until"></p>
+                                                       <div class="experience">
+                                                        <p class="" contenteditable="true" placeholder="TECH USED"></p>
+                                                       </div>
+                                                       <p class="content exp" contenteditable="true" placeholder="Enter your work experience description. Provide details that showcase how you were able to contribute and add value. Focus on responsibilities that are relevant to the job you are applying for. If you need help writing your work experience description, you can use the AI Writing Assistant">INFO</p>
+                                                </div> 
+            
+                                            </li>
+                                        </ul>
+                                          <!-- /PROJECT BLOCK -->
+                                    </div>
+                                <!-- /PROJECTS AREA -->
+                                 
+                                <!-- EDUCATION -->
+                                 <div id="education" class="tgl">
+                                    <p class="title" contenteditable="true" placeholder="EDUCATION">EDUCATION</p>
+                                     
+                                     <!-- work experience block -->
+                               
+                                       <ul>
+                                           <li>
+                                               <div class="experience-block">
+                                                <p class="title" contenteditable="true" placeholder="Position"></p>
+                                                <p class="right" contenteditable="true" placeholder="From-Until"></p>
+                                                  <div class="experience">
+                                                   <p class="" contenteditable="true" placeholder="EMPLOYER"></p>
+                                                  </div>
+                                                  <p class="content exp" contenteditable="true" placeholder="Enter your work experience description. Provide details that showcase how you were able to contribute and add value. Focus on responsibilities that are relevant to the job you are applying for. If you need help writing your work experience description, you can use the AI Writing Assistant">INFO</p>
+                                               </div> 
+                                           </li>
+            
+                                           
+                                       </ul>
+            
+            
+                                       <!-- /work experience block -->
+                                   </div>
+            
+                                <!-- /EDUCATION -->
+             
+                 
+                                </div>
+                         
+                            </div>
+                 
+                        </div> 
+                </div>
+
+                <div class="side-baar">
+                    <div class="add_skills_sb">
+                        <span>TECHNICAL SKILLS</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>SOFT SKILLS</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>HOBBIES</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>LANGUAGES</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>CERTIFICATIONS</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>WORK EXPERIENCE</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>PROJECTS</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="add_skills_sb">
+                        <span>EDUCATION</span>
+                        <button class="add">ADD</button>
+                        <button class="remove">REMOVE</button>
+                        <input value="1" type="text" class="index">
+                    </div>
+                    <div class="color-pallete">
+                        <input type="color" name="" id="" class="clr-picker" value="#a01ad1">
+                    </div>
+
+                    <div class="font-style">
+                        <select name="" id="font-style">
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="sans-serif">Sans-serif</option>
+                        </select>
+                    </div>
+
+                    <div class="side_baar_links">
+                        
+                        <input type="text" id="linkedin" placeholder="LINKEDIN LINK">
+                        <input type="text" id="github" placeholder="GITHUB LINK">
+                      </div>
+
+                    <div class="print">
+                        <button class="print" id="pdf-generate">PRINT</button>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                
+               </div>
+            
+            <script src="resume_page.js">
+        
+            </script>
+            <script>
+                let userinfo=document.querySelectorAll(".tgl")
+                let tglbtns=document.querySelectorAll(".tglbtn")
+                function isChecked(){
+                    tglbtns.forEach((btn,index)=>{
+                        if(btn.checked){
+                            userinfo[index].classList.add("displaying")
+                            userinfo[index].style.display=`block`
+                            setTimeout(() => {
+                                userinfo[index].classList.remove("notdisplaying")
+                            }, 500);
+                        }
+                        else{
+                            userinfo[index].classList.remove("displaying")                
+                            userinfo[index].classList.add("notdisplaying")                
+                            setTimeout(() => {
+                                userinfo[index].style.display=`none`
+                            }, 1000);
+                        }
+                    })
+                }
+            </script>
+            
+  
+             
+         
+               <!-- PDF CONTENT END -->
+
+            </page>
+        </div>
+    </div>
+    
+    <div class="responsive-message"></div>
+
+    <!-- <footer class = "footer bg-dark">
+        <div class="container1">
+            <div class = "footer-content text-center">
+                <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>build.resume</span></p>
+            </div>
+        </div>
+    </footer> -->
+
+    <style>
+        /*
+            Use the DejaVu Sans font for display and embedding in the PDF file.
+            The standard PDF fonts have no support for Unicode characters.
+        */
+        .pdf-page {
+            font-family: "DejaVu Sans", "Arial", sans-serif;
+        }
+    </style>
+
+    <script>
+        // Import DejaVu Sans font for embedding
+
+        // NOTE: Only required if the Kendo UI stylesheets are loaded
+        // from a different origin, e.g. cdn.kendostatic.com
+        kendo.pdf.defineFont({
+            "DejaVu Sans"             : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
+            "DejaVu Sans|Bold"        : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
+            "DejaVu Sans|Bold|Italic" : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
+            "DejaVu Sans|Italic"      : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf"
+        });
+    </script>
+
+    <!-- Load Pako ZLIB library to enable PDF compression -->
+    <!-- <script src="../content/shared/js/pako.min.js"></script> -->
+
+    <script>
+      function getPDF(selector) {
+        kendo.drawing.drawDOM($(selector)).then(function(group){
+          kendo.drawing.pdf.saveAs(group, 'testing.pdf');
+        });
+      }
+    </script>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+          font-family: 'Montserrat', sans-serif;
+    }
+    page[size="A4"] {  
+      width: 790px;
+      height: 1000px; 
+    }
+    page {
+      background: white; 
+      display: block;
+      margin: 0 auto;
+    }
+
+</style>
+
+</div>
+
+<script type="text/javascript">
+       $('#pdf-generate').click(function(){
+         getPDF('.container');
+       })
+</script>
+
+
+<script>
+    let profilepic=document.getElementById("profilepic");
+    let inputfile=document.getElementById("input-file");
+
+    inputfile.onchange=function(){
+        profilepic.src=URL.createObjectURL(inputfile.files[0]);
+    }
+</script>
+  
+</body>
+</html>
+
+
+
